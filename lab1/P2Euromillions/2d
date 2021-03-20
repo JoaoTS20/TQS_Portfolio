@@ -1,0 +1,9 @@
+Which classes/methods offer less coverage?
+
+A classe com less coverage é a CuponEuromillions não considerando a classe DemoMain.
+ 
+
+
+Are all possible decision branches being covered?
+Não.
+
