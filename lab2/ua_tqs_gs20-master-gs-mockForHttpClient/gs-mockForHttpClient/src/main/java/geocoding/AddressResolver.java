@@ -48,12 +48,26 @@ public class AddressResolver {
         // get parts from response till reaching the address
         JSONObject obj = (JSONObject) new JSONParser().parse(response);
         obj = (JSONObject) ((JSONArray) obj.get("results")).get(0);
-        JSONObject address = (JSONObject) ((JSONArray) obj.get("locations")).get(0);
+        try{
+            JSONObject address = (JSONObject) ((JSONArray) obj.get("locations")).get(0);
+            String road = (String) address.get("street");
+            String city = (String) address.get("adminArea5");
+            String state = (String) address.get("adminArea3");
+            String zip = (String) address.get("postalCode");
+            return new Address(road, city, state, zip, null);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Bad coordinates!");
+            throw  new IndexOutOfBoundsException();
+            //return new Address(null, null, null, null, null);
+
+        }
+
+        /*JSONObject address = (JSONObject) ((JSONArray) obj.get("locations")).get(0);
 
         String road = (String) address.get("street");
         String city = (String) address.get("adminArea5");
         String state = (String) address.get("adminArea3");
         String zip = (String) address.get("postalCode");
-        return new Address(road, city, state, zip, null);
+        return new Address(road, city, state, zip, null);*/
     }
 }
