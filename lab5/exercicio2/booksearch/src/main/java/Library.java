@@ -14,6 +14,11 @@ public class Library {
         store.add(book);
     }
 
+
+    public void removeBook(final Book book){
+        store.remove(book);
+        }
+
     public List<Book> findBooks(final LocalDateTime from, final LocalDateTime to) {
         Calendar end = Calendar.getInstance();
         Date fromDate = java.sql.Timestamp.valueOf(from);
@@ -24,6 +29,13 @@ public class Library {
         return store.stream().filter(book -> {
             return fromDate.before(java.sql.Timestamp.valueOf(book.getPublished())) && end.getTime().after(java.sql.Timestamp.valueOf(book.getPublished()));
         }).sorted(Comparator.comparing(Book::getPublished).reversed()).collect(Collectors.toList());
+    }
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "store=" + store +
+                '}';
     }
 
 }

@@ -28,9 +28,16 @@ public class BookSearchSteps {
 
     @Given("(a/another) book with the title {string}, written by {string}, published in {iso8601Date}")
     public void addNewBook(final String title, final String author, final LocalDateTime published) {
-        System.out.println(published);
         Book book = new Book(title, author, published);
         library.addBook(book);
+
+    }
+    @When("remove from library book with the title {string}, written by {string}, published in {iso8601Date}")
+    public void removeBook(final String title, final String author, final LocalDateTime published){
+        System.out.println(library);
+        Book book = new Book(title, author, published);
+        library.removeBook(book);
+        System.out.println("After Remove:\n"+library);
     }
 
     @When("the customer searches for books published between {year} and {year}")
