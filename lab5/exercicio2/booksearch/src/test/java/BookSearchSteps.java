@@ -2,6 +2,8 @@ import io.cucumber.java.ParameterType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 import org.assertj.core.api.Assertions.*;
 import java.time.LocalDateTime;
@@ -13,59 +15,41 @@ public class BookSearchSteps {
     Library library = new Library();
     List<Book> result = new ArrayList<>();
 
-    //TODO: FAZER O PRIMEIRO TESTE BEM E ADICIONAR OS QUE ESTÃO NOS SLIDES (AQUELA CONF DO ISO É QUE ESTÁ A DAR ERRO)
-
     @ParameterType("([0-9]{4})-([0-9]{2})-([0-9]{2})")
     public LocalDateTime iso8601Date(String year, String month, String day){
         return LocalDateTime.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day),0, 0);
     }
 
+    @ParameterType("([0-9]{4})")
+    public LocalDateTime year(String year) {
+        LocalDateTime ldt = LocalDateTime.of(Integer.parseInt(year), 01, 01, 0, 0);
+        return ldt;
+    }
 
-    @When("the customer searches for books published between {iso8601Date} and {iso8601Date}")
-    public void setSearchParameters(final LocalDateTime from, final LocalDateTime to) {
+    @Given("(a/another) book with the title {string}, written by {string}, published in {iso8601Date}")
+    public void addNewBook(final String title, final String author, final LocalDateTime published) {
+        System.out.println(published);
+        Book book = new Book(title, author, published);
+        library.addBook(book);
+    }
+
+    @When("the customer searches for books published between {year} and {year}")
+    public void setSearchParameters(final LocalDateTime from, LocalDateTime to) {
         result = library.findBooks(from, to);
     }
 
+    @Then("{int} books should have been found")
+    public void verifyAmountOfBooksFound(final int booksFound) {
+        assertThat(result.size(), equalTo(booksFound));
+    }
 
-     @Given("a book with the title {string}, written by {string}, published in {iso8601Date}")
-     public void a_book_with_the_title_written_by_published_in(String string, String string2, Date date_iso_local_date_time) {
-     // Write code here that turns the phrase above into concrete actions
-     throw new io.cucumber.java.PendingException();
-     }
-
-
-     @Given("(a|another) book with the title {string}, written by {string}, published in {iso8601Date}")
-     public void addNewBook(final String title, final String author, final LocalDateTime published) {
-     Book book = new Book(title, author, published);
-     library.addBook(book);
-     }
+    @Then("Book {int} should have the title {string}")
+    public void verifyBookAtPosition(final int position, final String title) {
+        assertThat(result.get(position - 1).getTitle(), equalTo(title));
+    }
 
 
-     @Given("another book with the title {string}, written by {string}, published in {iso8601Date}")
-     public void another_book_with_the_title_written_by_published_in(String string, String string2, LocalDateTime date_iso_local_date_time) {
-     // Write code here that turns the phrase above into concrete actions
-     throw new io.cucumber.java.PendingException();
-     }
 
-
-     @When("the customer searches for books published between {iso8601Date} and {iso8601Date}")
-     public void setSearchParameters(final LocalDateTime from, final LocalDateTime to) {
-     result = library.findBooks(from, to);
-     }
-
-
-     @Then("{int} books should have been found")
-     public void books_should_have_been_found(Integer int1) {
-     // Write code here that turns the phrase above into concrete actions
-     throw new io.cucumber.java.PendingException();
-     }
-
-
-     @Then("Book {int} should have the title {string}")
-     public void book_should_have_the_title(Integer int1, String string) {
-     // Write code here that turns the phrase above into concrete actions
-     throw new io.cucumber.java.PendingException();
-     }
 
 
 }
