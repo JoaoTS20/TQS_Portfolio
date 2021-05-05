@@ -1,12 +1,23 @@
 package com.example.exercicio2;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "students")
 public class Student {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String name;
     private int age;
     private int nmec;
     private String nationality;
     private String course;
+
+
 
 
     public String getName() {
@@ -48,4 +59,5 @@ public class Student {
     public void setCourse(String course) {
         this.course = course;
     }
+
 }

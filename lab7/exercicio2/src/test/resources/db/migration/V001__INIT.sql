@@ -1,4 +1,4 @@
-CREATE TABLE books (
+CREATE TABLE students (
     id BIGSERIAL PRIMARY KEY,
     name varchar(255) not null,
     age integer not null,
