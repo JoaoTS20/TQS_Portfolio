@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Lab1_1" />
+        <module name="ExampleWebdriverGarcia" />
+        <module name="Stocks" />
+        <module name="booksearch" />
+        <module name="Exercicio3" />
+        <module name="junit5-cucumber" />
+        <module name="euromillions-play" />
+        <module name="Test" />
+        <module name="gs-MockForHttpClient" />
+        <module name="Exercice_1" />
+        <module name="webdriver" />
+        <module name="employee-mngr" />
+        <module name="exercicio2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="booksearch" target="11" />
+      <module name="employee-mngr" target="11" />
+      <module name="euromillions-play" target="1.8" />
+      <module name="ExampleWebdriverGarcia" target="11" />
+      <module name="Exercice_1" target="11" />
+      <module name="exercicio2" target="11" />
+      <module name="Exercicio3" target="11" />
+      <module name="gs-MockForHttpClient" target="11" />
+      <module name="junit5-cucumber" target="1.8" />
+      <module name="Lab1_1" target="11" />
+      <module name="Stocks" target="11" />
+      <module name="Test" target="11" />
+      <module name="webdriver" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="employee-mngr" options="-parameters" />
+      <module name="exercicio2" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lab1/P1Stack/Lab1_1/pom.xml" />
+        <option value="$PROJECT_DIR$/lab1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2/Stocks/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2/ua_tqs_gs20-master-gs-mockForHttpClient/gs-mockForHttpClient/pom.xml" />
+        <option value="$PROJECT_DIR$/lab3/Exercicio3/pom.xml" />
+        <option value="$PROJECT_DIR$/lab3/Exercicio4/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/lab3/Exercice_1_2/pom.xml" />
+        <option value="$PROJECT_DIR$/lab4/exercicio1/ua_tqs_gs20-master/gs-employee-mngr/pom.xml" />
+        <option value="$PROJECT_DIR$/lab4/exercicio2_3/pom.xml" />
+        <option value="$PROJECT_DIR$/lab5/exercicio1/junit5-cucumber/pom.xml" />
+        <option value="$PROJECT_DIR$/lab5/exercicio2/booksearch/pom.xml" />
+        <option value="$PROJECT_DIR$/lab5/exercicio3/webdriver/pom.xml" />
+        <option value="$PROJECT_DIR$/lab5/exercicio3/ExampleWebdriverGarcia/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

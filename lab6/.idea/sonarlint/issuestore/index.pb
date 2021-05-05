@@ -1,0 +1,25 @@
+
+|
+Ltask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/.gitignore,7\8\784262725de4f740f05c0db690d548a6449907f6
+£
+stask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/main/java/euromillions/CuponEuromillions.java,b\a\badc6b1aea5b9a95f9a2e4d863ffd4405efa11e6
+ê
+`task1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/main/java/ui/DemoMain.java,8\2\82c7ddfc5386d0017cfa40dd245e005fa0b706bd
+ï
+etask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/main/java/euromillions/Dip.java,8\c\8ceac61b9c301984d470c98a8f85c3ac67422c79
+ô
+itask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/test/java/euromillions/DipTest.java,c\3\c3d69787361bc7b519e671ef9deedab10703999b
+á
+Wtask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/euromillions-play.iml,e\2\e2dfc32fbf29a31cc91f0fca05e8d28bbe3fd655
+¢
+rtask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/main/java/euromillions/EuromillionsDraw.java,a\7\a7b0d7eeb2d2a4d24f511df5f85c0409577aec3e
+¶
+vtask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/test/java/euromillions/EuromillionsDrawTest.java,c\2\c243398da4c615d330d07cedd96c1f6ce33db845
+y
+Itask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/pom.xml,c\7\c7a1fe89de02a3efe878970bb8e76b5b4db47b79
+ó
+gtask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/main/java/sets/SetOfNaturals.java,f\1\f185d37aa4ec40358ac63174eb53081ac34bd743
+õ
+ktask1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/src/test/java/sets/SetOfNaturalsTest.java,6\9\695d401d7dee14b41af1f2ea26507108b2edc242
+9
+	Readme.md,0\c\0c1945d7443c2e154bd3e421c0d438bd4086d8c3

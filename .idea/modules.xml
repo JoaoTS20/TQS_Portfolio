@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lab5/exercicio3/ExampleWebdriverGarcia/ExampleWebdriverGarcia.iml" filepath="$PROJECT_DIR$/lab5/exercicio3/ExampleWebdriverGarcia/ExampleWebdriverGarcia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/Exercice_1_2/Exercice_1.iml" filepath="$PROJECT_DIR$/lab3/Exercice_1_2/Exercice_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/Exercicio3/Exercicio3.iml" filepath="$PROJECT_DIR$/lab3/Exercicio3/Exercicio3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1/P1Stack/Lab1_1/Lab1_1.iml" filepath="$PROJECT_DIR$/lab1/P1Stack/Lab1_1/Lab1_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2/Stocks/Stocks.iml" filepath="$PROJECT_DIR$/lab2/Stocks/Stocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TQS_Portfolio.iml" filepath="$PROJECT_DIR$/.idea/TQS_Portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/Exercicio4/Test/Test.iml" filepath="$PROJECT_DIR$/lab3/Exercicio4/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5/exercicio2/booksearch/booksearch.iml" filepath="$PROJECT_DIR$/lab5/exercicio2/booksearch/booksearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4/exercicio1/ua_tqs_gs20-master/gs-employee-mngr/employee-mngr.iml" filepath="$PROJECT_DIR$/lab4/exercicio1/ua_tqs_gs20-master/gs-employee-mngr/employee-mngr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/euromillions-play.iml" filepath="$PROJECT_DIR$/lab1/P2Euromillions/iolvr-tqs_labs_euromillion_unit-04c7763b3f10/euromillions-play.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4/exercicio2_3/exercicio2.iml" filepath="$PROJECT_DIR$/lab4/exercicio2_3/exercicio2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2/ua_tqs_gs20-master-gs-mockForHttpClient/gs-mockForHttpClient/gs-MockForHttpClient.iml" filepath="$PROJECT_DIR$/lab2/ua_tqs_gs20-master-gs-mockForHttpClient/gs-mockForHttpClient/gs-MockForHttpClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5/exercicio1/junit5-cucumber/junit5-cucumber.iml" filepath="$PROJECT_DIR$/lab5/exercicio1/junit5-cucumber/junit5-cucumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5/exercicio3/webdriver/webdriver.iml" filepath="$PROJECT_DIR$/lab5/exercicio3/webdriver/webdriver.iml" />
+    </modules>
+  </component>
+</project>
