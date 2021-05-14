@@ -27,9 +27,9 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                dir('lab4/exercicio2_3/'){
+
                 sh './jenkins/scripts/deliver.sh'
-                }
+            
             }
         }
     }
