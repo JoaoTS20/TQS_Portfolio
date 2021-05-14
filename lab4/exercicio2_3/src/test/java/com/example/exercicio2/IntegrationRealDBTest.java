@@ -19,10 +19,10 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource( locations = "classpath:application-integrationtest.properties")
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@TestPropertySource( locations = "classpath:application-integrationtest.properties")
 public class IntegrationRealDBTest {
-
+/*
     @Autowired
     private TestRestTemplate restTemplate;
 
@@ -68,4 +68,5 @@ public class IntegrationRealDBTest {
         assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(entity.getBody().getMaker()).isEqualTo("ferrari");
     }
+    */
 }
