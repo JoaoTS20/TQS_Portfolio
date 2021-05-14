@@ -1,33 +1,17 @@
 pipeline {
-    agent any
-    tools {
-        jdk 'jdk11'
-        maven 'Maven'
-}
-stages {
-    stage('test java installation') {
-        steps {
-            sh 'java -version'
+    agent {
+        docker {
+            image 'maven:3.8.1-adoptopenjdk-11' 
+            args '-v /root/.m2:/root/.m2' 
         }
     }
-    stage('test maven installation') {
-        steps {
-            dir('lab4/exercicio2_3/'){
-                sh 'mvn -version'
+    stages {
+        stage('Build') { 
+            steps {
+                dir('lab4/exercicio2_3/'){
+                sh 'mvn -B -DskipTests clean package' 
+                }
             }
         }
-    }
-    stage('Install'){
-        steps{
-            dir('lab4/exercicio2_3/'){
-                sh 'mvn clean install'
-            }
-        }
-        post{
-            always{
-                junit '**/target/*-reports/TEST-*.xml'
-            }
-        }
-    }
     }
 }

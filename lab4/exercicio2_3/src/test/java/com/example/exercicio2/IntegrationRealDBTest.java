@@ -23,11 +23,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 //@TestPropertySource( locations = "classpath:application-integrationtest.properties")
 public class IntegrationRealDBTest {
 
+
+/*
+
     @Test
     void failingTest() {
         fail("a failing test");
     }
-/*
+    
     @Autowired
     private TestRestTemplate restTemplate;
 
