@@ -17,5 +17,17 @@ stages {
             }
         }
     }
+    stage('Install'){
+        steps{
+            dir('lab4/exercicio2_3/'){
+                sh 'mvn clean install'
+            }
+        }
+        post{
+            always{
+                junit '**/target/*-reports/TEST-*.xml'
+            }
+        }
+    }
     }
 }
