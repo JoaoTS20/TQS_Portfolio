@@ -13,5 +13,26 @@ pipeline {
                 }
             }
         }
+
     }
+    stage('Test') {
+            steps {
+                dir('lab4/exercicio2_3/'){
+                sh 'mvn test'
+                }
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
+    }
+    stage('Deliver') {
+            steps {
+                dir('lab4/exercicio2_3/'){
+                sh './jenkins/scripts/deliver.sh'
+                }
+            }
+    }
+
 }
