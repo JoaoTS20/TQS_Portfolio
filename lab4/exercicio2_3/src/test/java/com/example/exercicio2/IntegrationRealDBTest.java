@@ -22,6 +22,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 //@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 //@TestPropertySource( locations = "classpath:application-integrationtest.properties")
 public class IntegrationRealDBTest {
+
+    @Test
+    void failingTest() {
+        fail("a failing test");
+    }
 /*
     @Autowired
     private TestRestTemplate restTemplate;
