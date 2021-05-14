@@ -9,27 +9,27 @@ pipeline {
         stage('Build') { 
             steps {
                 dir('lab4/exercicio2_3/'){
-                sh 'mvn -B -DskipTests clean package' 
+                    sh 'mvn -B -DskipTests clean package' 
                 }
             }
         }
         stage('Test') {
             steps {
                 dir('lab4/exercicio2_3/'){
-                sh 'mvn test'
+                    sh 'mvn test'
                 }
             }
             post {
                 always {
+                    dir('lab4/exercicio2_3/'){
                     junit 'target/surefire-reports/*.xml'
+                    }
                 }
             }
         }
         stage('Deliver') {
             steps {
-
                 sh './jenkins/scripts/deliver.sh'
-            
             }
         }
     }
