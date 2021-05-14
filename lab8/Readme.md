@@ -1,30 +1,23 @@
 
-
-- Used project:  *lab4/exercice2_3*
+# Used project:  *lab4/exercice2_3*
 
 ## Task 1: Use Jenkins as standalone application and create jobs by configuration
 
-- Console output: Image 3
+- Evidences Folder Task 1 
 
 ## Tasks 2: Create a simple pipeline for a Maven project and poll the SCM (no Dockerization)
 
-
-- k)  Image:   
-
-- I) Jenkinsfile in root
-
-- m) Image:
-
-- n) Image:
+- Evidences Folder Task 2 with Jenkinsfile Used 
+    - k) Every 25 minutes
 
 ## Task 3: Blueocean interface
 
-- Image: 
-
+- Evidences Folder Task 3
 
 ## Taks 4: use Docker-in-Docker (“Dind”)
 
 - Used Configurations in the guideline
 
-- Docker Running:
+- Evidences Folder Task 4 with Dockerfile and Jenkinsfile Used 
 
+- Unfortunately despite my best efforts I was not able to get the 'Deliver' stage to work.
